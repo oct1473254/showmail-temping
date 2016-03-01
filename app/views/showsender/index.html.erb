@@ -1,0 +1,13 @@
+<h1>Showsender#index</h1>
+<p>Your Temp is named: </p> <%= TempName.last.first_name %>, <%= TempName.last.last_name %>
+<p>Let's send some emails!</p>
+
+<%= link_to 'Send First Email EMDR01', :controller => "showsender", :action => "send_mail", :type => "emdr01" %>
+<br>
+<%= link_to 'Send second Email EMSJ01', :controller => "showsender", :action => "send_mail", :type => "emsj01" %>
+<br>
+<%= link_to 'Send third Email EMDI01', :controller => "showsender", :action => "send_mail", :type => "emdi01" %>
+<p>James Introduces himself</p>
+<%= link_to 'Send fourth Email EMJA01', :controller => "showsender", :action => "send_mail", :type => "emja01" %>
+
+<p>After they listen to the first voicemail, then send these emails</p>

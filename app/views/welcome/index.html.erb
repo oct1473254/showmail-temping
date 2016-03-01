@@ -1,0 +1,20 @@
+<h1>Welcome to Show Mailer</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<p>ENTER THE NAME OF THE TEMP</p>
+
+<%= form_for :temp_names_path do |f| %>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+ 
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_area :last_name %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

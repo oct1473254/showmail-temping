@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @temp_name.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @temp_name.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_temp_name_path(@temp_name) %> |
+<%= link_to 'Back', temp_names_path %>
+
+<h1><%= link_to 'HERE WE GO! We are ready to do the show', showsender_path %></h1>
